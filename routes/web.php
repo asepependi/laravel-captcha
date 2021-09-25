@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/refresh_captcha', 'Auth\RegisterController@refresh')->name('refresh');
 
